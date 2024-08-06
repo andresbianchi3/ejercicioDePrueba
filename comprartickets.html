@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compra tus tickets para las conferencias internacionales de programación.">
+  <title>Compra de Tickets</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Compra de Tickets</h2>
+    <form id="ticketForm" class="p-4 p-md-5 border rounded-3 bg-light">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
+      </div>
+      <div class="mb-3">
+        <label for="tickets" class="form-label">Cantidad de Tickets:</label>
+        <input type="number" class="form-control" id="tickets" placeholder="Ingrese la cantidad de tickets que desea comprar" min="1" max="3" required>
+      </div>
+      <div class="d-flex justify-content-between">
+        <a href="./index.html" class="btn btn-secondary">Atrás</a>
+        <button type="submit" class="btn btn-primary">Comprar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('ticketForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Gracias por su compra. Pronto recibirá un correo de confirmación.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

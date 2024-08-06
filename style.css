@@ -1,0 +1,130 @@
+/* Variables de CSS para colores */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f7f7f7;
+    --text-color: #333;
+    --border-radius: 10px;
+}
+
+/* Centro el navbar */
+.collapse {
+    display: flex;
+    justify-content: center;
+}
+
+/* Centro la card */
+#cardevento {
+    display: flex;
+    justify-content: center;
+}
+
+/* Grupo de cards */
+.card-group {
+    justify-content: center;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: var(--background-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+form input {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+form .btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+form .btn-secondary {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+/* Estilos para la página de 'Acerca del Evento' */
+.container {
+    background: var(--background-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h4 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p, ul, li {
+    color: var(--text-color);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul.list-group {
+    padding-left: 0;
+}
+
+ul.list-group li {
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul.list-group li:last-child {
+    margin-bottom: 0;
+}
+
+a.btn {
+    margin-top: 20px;
+}

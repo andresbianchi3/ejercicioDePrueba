@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(39, 135, 63);
+  }
+  .container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para hacer legible el contenido */
+    padding: 20px;
+    border-radius: 10px;
+  }
